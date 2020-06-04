@@ -19,24 +19,61 @@
     
     <div class="wrapper">
         <div id="formContent">
-            <!-- Icon -->
-            <div class="inputs">
-            <h4> BackDash</h4>
-            </div>
-        
-            <!-- Login Form -->
-            <form>
-            <input type="text" class="email" id="email" name="email" placeholder="email">
-            <input type="text" class="password" id= "passoword" name="login" placeholder="password">
-            <input type="submit" class="loginbutton" id="loginBtn" value="Log In">
-            </form>
+            <div class ="container"> 
 
-            <!-- Remind Passowrd -->
-            <div id="formFooter">
-                <a class="underlineHover" id="generateBtn" href="#">Sign Up</a>
+                <!-- Icon -->
+                <div class="inputs">
+                <h4>HelloWorld</h4>
+                </div>
+            
+                <!-- Login Form -->
+                <form>
+                <input type="text" class="email" id="email" name="email" placeholder="email">
+                <input type="password" class="password" id= "password" name="login" placeholder="password">
+                <input type="submit" class="loginbutton" id="loginBtn" value="Log In">
+                </form>
+
+                <!-- Remind Passowrd -->
+                <div id="formFooter">
+                    <a class="underlineHover" id="signUpBtn" onclick="signupClick()" href="#">Sign Up</a>
+                </div>
+
             </div>
-  
+    
+    
         </div>
+        <div style = "display: none;" id="signUpContent">
+            <div class ="container">
+
+                <!-- Icon -->
+                <div class="inputs">
+                <h4>HelloWorld</h4>
+                </div>
+            
+                <!-- Login Form -->
+                <form>
+                <input type="text" class="name" id="name" name="name" placeholder="name">
+                <input type="text" class="email" id="email" name="email" placeholder="email">
+                <input type="password" class="password" id= "password" name="login" placeholder="password">
+                <input type="password" class="password" id= "password" name="login" placeholder="confirm password">
+                <input type="submit" class="submitbutton" id="submitBtn" onclick="backtoLogin()" value="Submit">
+                </form>
+
+                <!-- Remind Passowrd -->
+                <div id="formFooter">
+                    <a class="underlineHover" id="signUpBtn" onclick="mynewPassword()" href="#">Generate Password</a>
+                </div>
+
+            </div>
+    
+    
+        </div>
+      
+      
+    
+    
+        </div>
+
 
     </div>
 
