@@ -11,15 +11,17 @@ function signupClick(){
 
 
 
-function backtoLogin(){
-    document.getElementById("signUpContent").style.display = "none" 
-    document.getElementById("formContent").style.display = "inline" 
+function backtoLogin(event){
+    
     var firstPassword = document.getElementById("password").value
     var confirmPassword = document.getElementById("confirmPassword").value
+    event.preventDefault()
 
 
 
     if (firstPassword === confirmPassword) {
+        document.getElementById("signUpContent").style.display = "none" 
+        document.getElementById("formContent").style.display = "inline" 
   
       }else {
         alert("Passwords don't match. Please try again.");
@@ -41,7 +43,7 @@ function randomPassword(event) {
     }
     console.log(finalpassword)
     document.getElementById("password").value = finalpassword
-    document.getElementById("confirmPassword").value = finalpassword
+   
 }
 
 
