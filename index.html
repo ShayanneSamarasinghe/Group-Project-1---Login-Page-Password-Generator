@@ -29,11 +29,11 @@
                 <!-- Login Form -->
                 <form>
                 <input type="text" class="email" id="email" name="email" placeholder="email">
-                <input type="password" class="password" id= "password" name="login" placeholder="password">
+                <input type="password" class="loginPassword" id= "loginPassword" name="login" placeholder="password">
                 <input type="submit" class="loginbutton" id="loginBtn" value="Log In">
                 </form>
 
-                <!-- Remind Passowrd -->
+                <!--  -->
                 <div id="formFooter">
                     <a class="underlineHover" id="signUpBtn" onclick="signupClick()" href="#">Sign Up</a>
                 </div>
@@ -50,18 +50,18 @@
                 <h4>HelloWorld</h4>
                 </div>
             
-                <!-- Login Form -->
+                <!-- SignUp Form -->
                 <form>
                 <input type="text" class="name" id="name" name="name" placeholder="name">
                 <input type="text" class="email" id="email" name="email" placeholder="email">
-                <input type="password" class="password" id= "password" name="login" placeholder="password">
-                <input type="password" class="password" id= "password" name="login" placeholder="confirm password">
+                <input type="text" class="password" id= "password" name="login" placeholder="password">
+                <input type="text" class="confirmPassword" id= "confirmPassword" name="login" placeholder="confirm password">
                 <input type="submit" class="submitbutton" id="submitBtn" onclick="backtoLogin()" value="Submit">
                 </form>
 
-                <!-- Remind Passowrd -->
+                <!-- Generate Password -->
                 <div id="formFooter">
-                    <a class="underlineHover" id="signUpBtn" onclick="mynewPassword()" href="#">Generate Password</a>
+                    <a class="underlineHover" id="signUpBtn" onclick="randomPassword(event)" href="">Generate Random Password</a>
                 </div>
 
             </div>
