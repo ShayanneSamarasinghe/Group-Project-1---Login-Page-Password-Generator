@@ -27,9 +27,9 @@
             
                 <!-- Login Form -->
                 <form>
-                <input type="text" class="email" id="email" name="email" placeholder="email">
-                <input type="password" class="loginPassword" id= "loginPassword" name="login" placeholder="password">
-                <input type="submit" class="loginbutton" id="loginBtn" value="Log In">
+                <input type="text" class="loginusername" id="loginUsername" name="loginUsername" placeholder="username">
+                <input type="password" class="loginPassword" id= "loginPassword" name="loginPassword" placeholder="password">
+                <input type="submit" class="loginBtn" id="loginBtn" onclick="loginClick(event)" value="Log In">
                 </form>
 
                 <!--  -->
@@ -49,8 +49,9 @@
             
                 <!-- SignUp Form -->
                 <form>
+                <!-- <input type="text" class="name" id="name" name="name" placeholder="name"> -->
+                <input type="text" class="username" id="username" name="username" placeholder="username">
                 <input type="text" class="name" id="name" name="name" placeholder="name">
-                <input type="text" class="email" id="email" name="email" placeholder="email">
                 <input type="text" class="password" id= "password" name="login" placeholder="password">
                 <input type="text" class="confirmPassword" id= "confirmPassword" name="login" placeholder="confirm password">
                 <input type="submit" class="submitbutton" id="submitBtn" onclick="backtoLogin(event)" value="Submit">
